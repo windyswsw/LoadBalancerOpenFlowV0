@@ -1,0 +1,7 @@
+This project can be used to check the client traffic flow between h1 and h2, which follows the following path:
+ h1 - s1 - l1 - s1 - s3 - n1 - s3 - s2 - l2 - s2 - h2
+
+Also it can be used to check the load balancers synchronization traffic flows, which follows the following path:
+ l1 - s1 - s3 - s2 - l2
+ 
+Client's traffic openflow rules are based on ports, while load balancers synchronization traffic flows openflow rules are based on ip addresses.
