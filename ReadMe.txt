@@ -1,4 +1,12 @@
-Read Me file will give you step by step instructions to start the controller, to start the mininet topology and to start the hosts.
+This project can be used to check the client traffic flow between h1 and h2, which follows the following path:
+ h1 - s1 - l1 - s1 - s3 - n1 - s3 - s2 - l2 - s2 - h2
+
+Also it can be used to check the load balancers synchronization traffic flows, which follows the following path:
+ l1 - s1 - s3 - s2 - l2
+ 
+Client's traffic openflow rules are based on ports, while load balancers synchronization traffic flows openflow rules are based on ip addresses.
+
+Following are the step by step instructions to start the controller, to start the mininet topology and to start the hosts.
 
 (1) Start the controller
 a. Copy the Controller.py to ryu/ryu/app/ folder
