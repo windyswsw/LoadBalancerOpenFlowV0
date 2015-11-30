@@ -1,4 +1,4 @@
-Topology for this image can be found under "Issues" tab
+Topology for this project can be found under "Issues" tab
 
 This project can be used to check the client traffic flow between h1 and h2, which follows the following path:
  h1 - s1 - l1 - s1 - s3 - n1 - s3 - s2 - l2 - s2 - h2
